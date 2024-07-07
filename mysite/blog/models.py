@@ -2,6 +2,8 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from taggit.managers import TaggableManager
+
 class PublishedManager(models.Manager): #менеджер для получения опубликованных
     def get_queryset(self):
         return super().get_queryset()\
@@ -29,6 +31,7 @@ class Post(models.Model):
 
     objects =  models.Manager() #менеджер по умолчанию
     published = PublishedManager() # мой менеджер опубликованных
+    tags = TaggableManager()
 
     class Meta:
         ordering = ['-publish']
