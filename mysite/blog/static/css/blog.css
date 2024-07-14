@@ -5,7 +5,7 @@ body {
 }
 
 a {
-    color:#00abff;
+    color:#bd1212;
     text-decoration:none;
 }
 
@@ -36,9 +36,9 @@ h2 {
 
 p.date {
     color:#ccc;
-    font-family: georgia, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
-    font-style: italic;
+    font-style: normal;
 }
 
 /* pagination */
@@ -65,7 +65,7 @@ input, textarea {
 }
 input[type=submit] {
     font-weight:bold;
-    background:#00abff;
+    background:#bd1212;
     color:#fff;
     padding:10px 20px;
     font-size:14px;
