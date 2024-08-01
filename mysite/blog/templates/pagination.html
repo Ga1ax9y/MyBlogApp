@@ -9,5 +9,6 @@
       {% if page.has_next %}
         <a href="?page={{ page.next_page_number }}">Next</a>
       {% endif %}
+      <br><br><a href="{% url "blog:post_list" %}" >На первую страницу</a>
     </span>
   </div>
